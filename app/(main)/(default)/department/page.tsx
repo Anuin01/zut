@@ -289,7 +289,7 @@ const Department = () => {
             <h5 className="m-0">Өгөгдөл, лавлагаа: Илчит тэрэг эзэмшигч, өмчлөгч байгууллага, аж ахуйн нэгжийн бүртгэл, мэдээлэл</h5>
             <span className="block mt-2 md:mt-0 p-input-icon-left">
                 <i className="pi pi-search" />
-                <InputText type="search" onInput={(e) => setGlobalFilter(e.currentTarget.value)} placeholder="Search..." />
+                <InputText type="search" onInput={(e) => setGlobalFilter(e.currentTarget.value)} placeholder="Хайх..." />
             </span>
         </div>
     );
@@ -338,13 +338,13 @@ const Department = () => {
                         responsiveLayout="scroll"
                     >
                         <Column selectionMode="multiple" headerStyle={{ width: '4rem' }}></Column>
-                        <Column field="code" header="Code" sortable body={codeBodyTemplate} headerStyle={{ minWidth: '15rem' }}></Column>
-                        <Column field="name" header="Name" sortable body={nameBodyTemplate} headerStyle={{ minWidth: '15rem' }}></Column>
+                        <Column field="code" header="Регистерийн дугаар" sortable body={codeBodyTemplate} headerStyle={{ minWidth: '14rem' }}></Column>
+                        <Column field="name" header="Байгууллагын бүтэн нэр" sortable body={nameBodyTemplate} headerStyle={{ minWidth: '12rem' }}></Column>
                         {/* <Column header="Image" body={imageBodyTemplate}></Column> */}
-                        <Column field="price" header="Price" body={priceBodyTemplate} sortable></Column>
-                        <Column field="category" header="Category" sortable body={categoryBodyTemplate} headerStyle={{ minWidth: '10rem' }}></Column>
-                        <Column field="rating" header="Reviews" body={ratingBodyTemplate} sortable></Column>
-                        <Column field="inventoryStatus" header="Status" body={statusBodyTemplate} sortable headerStyle={{ minWidth: '10rem' }}></Column>
+                        <Column field="price" header="Байгууллагын товч нэр" body={priceBodyTemplate} sortable></Column>
+                        <Column field="category" header="Удирдах ажилтан" sortable body={categoryBodyTemplate} headerStyle={{ minWidth: '11rem' }}></Column>
+                        <Column field="rating" header="Утасны дугаар" body={ratingBodyTemplate} sortable></Column>
+                        <Column field="inventoryStatus" header="Гэрийн хаяг" body={statusBodyTemplate} sortable headerStyle={{ minWidth: '10rem' }}></Column>
                         <Column body={actionBodyTemplate} headerStyle={{ minWidth: '10rem' }}></Column>
                     </DataTable>
 
